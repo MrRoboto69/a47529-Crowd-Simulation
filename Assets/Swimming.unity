@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -145,8 +146,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 262266758}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 1
+  m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -244,8 +246,9 @@ MonoBehaviour:
   numFish: 50
   allFish: []
   swimLimits: {x: 5, y: 5, z: 5}
+  goalPos: {x: 0, y: 0, z: 0}
   minSpeed: 0.35
-  maxSpeed: 1
+  maxSpeed: 1.75
   neighbourDistance: 4.96
   rotationSpeed: 3.9
 --- !u!4 &708572269
@@ -272,8 +275,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1260379332}
   - component: {fileID: 1260379331}
-  - component: {fileID: 1260379330}
-  - component: {fileID: 1260379329}
   - component: {fileID: 1260379328}
   m_Layer: 0
   m_Name: Main Camera
@@ -284,22 +285,6 @@ GameObject:
   m_IsActive: 1
 --- !u!81 &1260379328
 AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1260379327}
-  m_Enabled: 1
---- !u!124 &1260379329
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1260379327}
-  m_Enabled: 1
---- !u!92 &1260379330
-Behaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -356,8 +341,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1260379327}
-  m_LocalRotation: {x: -0.08302558, y: 0.9006585, z: -0.19791767, w: -0.37782222}
-  m_LocalPosition: {x: 8.44155, y: 6.015158, z: 8.460594}
+  m_LocalRotation: {x: -0.09498419, y: 0.8858909, z: -0.20864916, w: -0.4032876}
+  m_LocalPosition: {x: 2.914487, y: 2.4128475, z: 2.976161}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
